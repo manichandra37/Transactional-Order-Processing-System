@@ -93,7 +93,7 @@ Centralized error handling using `@RestControllerAdvice`.
 POST/orders
 
 
-**Request Body:**
+## Request Body:
 
 ***json***
 ```
@@ -107,23 +107,23 @@ POST/orders
   ]
 }
 ```
-**Confirm Order:**
+## Confirm Order:
 
 PUT /orders/{id}/confirm
 
 
-**Cancel order:**
+## Cancel order:
 
 PUT /orders/{id}/cancel
 
 
-***Swagger Documentation:***
+## Swagger Documentation
 
 After starting the application, access Swagger UI at:
 
 - http://localhost:8080/swagger-ui/index.html
 
-***Database Design:***
+## Database Design
 
 **Order**
 -id
@@ -146,7 +146,7 @@ After starting the application, access Swagger UI at:
 -Centralized exception handling
 -Avoided over-engineering (DTOs, async flows) intentionally
 
-**What This Project Demonstrates**
+## What This Project Demonstrates
 
 > Transactional backend design
 >Concurrency-safe REST APIs
