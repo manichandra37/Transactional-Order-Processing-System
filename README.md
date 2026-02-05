@@ -139,7 +139,7 @@ After starting the application, access Swagger UI at:
 -unitPrice
 -order_id (foreign key)
 
-**Key Design Decisions**
+##Key Design Decisions
 
 -Used optimistic locking for better scalability
 -Enforced business rules at service layer
