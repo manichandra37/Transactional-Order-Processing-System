@@ -93,10 +93,10 @@ Centralized error handling using `@RestControllerAdvice`.
 POST/orders
 
 
-Request Body:
+**Request Body:**
 
-json
-{
+***json***
+```{
   "items": [
     {
       "productCode": "P1001",
@@ -105,25 +105,24 @@ json
     }
   ]
 }
-
-Confirm Order:
+```
+**Confirm Order:**
 
 PUT /orders/{id}/confirm
 
 
-cancel order:
+**Cancel order:**
 
 PUT /orders/{id}/cancel
 
 
-Swagger Documentation
+***Swagger Documentation:***
 
 After starting the application, access Swagger UI at:
 
-http://localhost:8080/swagger-ui/index.html
+- http://localhost:8080/swagger-ui/index.html
 
-Database Design:
-Database Design
+***Database Design:***
 
 **Order**
 -id
