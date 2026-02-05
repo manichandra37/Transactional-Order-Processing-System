@@ -149,7 +149,7 @@ After starting the application, access Swagger UI at:
 **What This Project Demonstrates**
 
 > Transactional backend design
--Concurrency-safe REST APIs
--Clean architecture
--Production-style exception handling
--Interview-ready backend engineering skills
+>Concurrency-safe REST APIs
+>Clean architecture
+>Production-style exception handling
+>Interview-ready backend engineering skills
