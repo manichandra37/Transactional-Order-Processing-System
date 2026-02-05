@@ -7,6 +7,8 @@ import java.util.List;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -19,14 +21,14 @@ public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public long id;
+    private Long id;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     public OrderStatus status;
 
     @Version
-    public Long version;
+    private Long version;
 
     @CreationTimestamp
     public LocalDateTime createdAt;
@@ -34,6 +36,7 @@ public class Order {
     @UpdateTimestamp
     public LocalDateTime updatedAt;
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true,fetch = FetchType.EAGER)
+    @JsonManagedReference
     private List<OrderItem> items = new ArrayList<>();
 }

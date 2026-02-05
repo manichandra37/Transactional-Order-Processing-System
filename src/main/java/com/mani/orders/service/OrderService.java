@@ -28,6 +28,7 @@ public class OrderService {
     public Order createOrder(Order order) {
 
         order.setStatus(OrderStatus.CREATED);
+        order.getItems().forEach(item -> item.setOrder(order));
         return orderRepository.save(order);
     }
 
