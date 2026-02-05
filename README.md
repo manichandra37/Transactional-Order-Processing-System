@@ -126,30 +126,30 @@ After starting the application, access Swagger UI at:
 ## Database Design
 
 **Order**
--id
--status
--version (optimistic locking)
--createdAt
--updatedAt
+- id
+- status
+- version (optimistic locking)
+- createdAt
+- updatedAt
 
 **OrderItem**
--id
--productCode
--quantity
--unitPrice
--order_id (foreign key)
+- id
+- productCode
+- quantity
+- unitPrice
+- order_id (foreign key)
 
 ## Key Design Decisions 
 
--Used optimistic locking for better scalability
--Enforced business rules at service layer
--Centralized exception handling
--Avoided over-engineering (DTOs, async flows) intentionally
+- Used optimistic locking for better scalability
+- Enforced business rules at service layer
+- Centralized exception handling
+- Avoided over-engineering (DTOs, async flows) intentionally
 
 ## What This Project Demonstrates
 
-> Transactional backend design
->Concurrency-safe REST APIs
->Clean architecture
->Production-style exception handling
->Interview-ready backend engineering skills
+- Transactional backend design
+- Concurrency-safe REST APIs
+- Clean architecture
+- Production-style exception handling
+- Interview-ready backend engineering skills
