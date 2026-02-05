@@ -96,7 +96,8 @@ POST/orders
 **Request Body:**
 
 ***json***
-```{
+```
+{
   "items": [
     {
       "productCode": "P1001",
